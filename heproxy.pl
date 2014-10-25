@@ -111,7 +111,7 @@ while (1) {
             my $buffer;
             my $read = $socket->sysread($buffer, 4096);
             if ($read) {
-                if (substr($buffer,0,14) eq "tgw"){
+                if (substr($buffer,0,14) eq "tgw_l7_forward"){
                     print $buffer;
                 }
                 else {
